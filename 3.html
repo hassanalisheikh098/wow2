@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Choose Your Activity</title>
+<style>
+  body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #f8f8f8;
+  }
+
+  .container {
+    text-align: center;
+    margin-top: 100px;
+    animation: fadeIn 1s ease-in-out;
+  }
+
+  h1 {
+    font-size: 48px;
+    color: #FF5733;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  button {
+    background-color: rgb(255, 87, 51);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 10px;
+  }
+
+  button:hover {
+    animation: colorChange 1s infinite alternate;
+  }
+
+  @keyframes colorChange {
+    0% {
+      background-color: rgb(255, 87, 51);
+    }
+    100% {
+      background-color: rgb(51, 87, 255);
+    }
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>What would you choose?</h1>
+  <button onclick="redirectToCPage()">GAMING</button>
+  <button onclick="redirectToCPage()">BOOK READING</button>
+  <button onclick="redirectToCPage()">SCROLLING</button>
+  <button onclick="redirectToDPage()">EATING</button>
+</div>
+
+<script>
+function redirectToCPage() {
+  window.location.href = 'c.html';
+}
+
+function redirectToDPage() {
+  window.location.href = 'd.html';
+}
+</script>
+</body>
+</html>

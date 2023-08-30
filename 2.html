@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Countercheck</title>
+<style>
+  body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #f8f8f8;
+  }
+
+  .container {
+    text-align: center;
+    margin-top: 100px;
+    animation: fadeIn 1s ease-in-out;
+  }
+
+  h1 {
+    font-size: 48px;
+    color: #FF5733;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  button {
+    background-color: rgb(255, 87, 51);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    animation: colorChange 1s infinite alternate;
+  }
+
+  @keyframes colorChange {
+    0% {
+      background-color: rgb(255, 87, 51);
+    }
+    100% {
+      background-color: rgb(51, 87, 255);
+    }
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>But still I will have to countercheck</h1>
+  <button onclick="redirectTo3Page()">Go Ahead</button>
+</div>
+
+<script>
+function redirectTo3Page() {
+  window.location.href = '3.html';
+}
+</script>
+</body>
+</html>
